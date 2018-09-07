@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*ul, ol {
+    list-style: none;
+    padding: 0;
+
+ul {
+    list-style: disc;
+}
+
+ul {
+    list-style: circle;
+}
+
+ul {
+    list-style: square;
+}
+}*/
+
+ul {
+    list-style-image: url('img/checked.png');
+}
+
+ol {
+    list-style: lower-latin;
+}
+
+.menu {
+    background: #4357ad;
+    list-style: none;
+    width: 200px;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.menu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background: #4888d6;
+}

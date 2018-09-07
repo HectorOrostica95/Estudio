@@ -1,0 +1,33 @@
+
+/*  Selector universar  
+* {
+   color: red 
+}
+*/
+
+h1, h2{
+    color: blue
+}
+
+h2{
+    color: red;
+}
+
+div p {
+    font-size: 20px;
+    color: black;
+}
+
+p a {
+    color: aqua
+}
+
+/*  corresponde al class    */
+.grande {
+    font-size: 35px
+}
+
+/*  Corresponde al id   */
+#grande {
+    font-size: 27px
+}

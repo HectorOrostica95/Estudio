@@ -1,0 +1,23 @@
+p{
+    font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: normal;
+    color: #4281ed;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+p{
+    text-align: justify;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 30px;;
+}
