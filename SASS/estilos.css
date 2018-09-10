@@ -1,0 +1,21 @@
+body {
+  background: #1b3d82;
+  display: flex;
+  justify-content: center;
+}
+
+.articulo {
+  background: #f2f2f2;
+  padding: 20px;
+  width: 400px;
+  margin-top: 30%;
+}
+.articulo .titulo {
+  color: #000;
+  text-align: center;
+}
+.articulo p a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=estilos.css.map */

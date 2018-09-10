@@ -1,0 +1,7 @@
+Comandos de SASS
+
+compliar el archivo
+sass sintax.sass:estilos.css
+
+que qeude observando el archivo y realice los cambios sin estar compilando cada vez
+sass --watch sintax.sass:estilos.css
