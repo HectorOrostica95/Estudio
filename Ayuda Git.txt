@@ -1,3 +1,15 @@
+Comandos de git
+
+Iniciar repositorio 
+git init
+
+Realizar Commit
+git commit -m "Ingresar comentario"
+
+Subir a git
+git push -u origin master
+
+Otros
 …or create a new repository on the command line
 
 echo "# Estudio" >> README.md
@@ -11,3 +23,4 @@ git push -u origin master
 
 git remote add origin https://github.com/HectorOrostica95/Estudio.git
 git push -u origin master
+
