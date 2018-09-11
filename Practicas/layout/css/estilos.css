@@ -64,16 +64,16 @@ header nav ul li a:hover {
     vertical-align: top;
 }
 
-.main .post {
+.main .posts {
     padding: 40px;
 }
 
-.main .post article h2 {
+.main .posts article h2 {
     margin-bottom: 20px;
     color: #424242;
 }
 
-.main .post article p {
+.main .posts article p {
     margin-bottom: 15px;
     line-height: 27px;
 }

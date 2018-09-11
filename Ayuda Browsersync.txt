@@ -1,0 +1,5 @@
+Para instalar browsersync
+npm install -g browser-sync
+
+Para ejecutar el archivo
+browser-sync start --server --files "index.html"
