@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Metodos y propiedades para Cadena de Texto</title>
+</head>
+<body>
+    <script>
+        var nombre = 'Hector Francisco Orostica Orostica';
+        var numeroCaracteres = nombre.length;
+
+        //console.log('El nombre '+ nombre +  ' tiene ' + numeroCaracteres + ' caracteres');
+        
+        //El substring corta por las posiciones
+        //var segundoNombre = nombre.substring(7, 16);
+        //console.log(segundoNombre);
+
+        //El substr corta desde la posicion indicada mas la cantidad de caracteres indicados 
+        //var segundoNombre = nombre.substr(7, 10);
+        //console.log(segundoNombre);
+
+        //var nuevoNombre = nombre.replace('Orostica', 'Chorostica');
+        //console.log(nuevoNombre);
+        
+        //console.log(nombre.toUpperCase());
+        //console.log(nombre.toLowerCase());
+
+        //var posicion = nombre.indexOf('o');
+        var posicion = nombre.lastIndexOf('o');
+        console.log(posicion);
+
+    </script>
+</body>
+</html>
