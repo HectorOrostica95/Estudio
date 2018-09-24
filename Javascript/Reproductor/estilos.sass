@@ -1,0 +1,150 @@
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body
+    background: #e9f1f7
+
+.contenedor
+    background: #000
+    width: 80%
+    margin: 40px
+    //margin: 40px auto
+    max-width: 800px
+    .reproductor
+        position: relative
+        &:hover
+            .controles
+                opacity: 1
+    .video
+        width: 100%
+        vertical-align: top
+        z-index: 90
+    .controles
+        opacity: 0
+        -webkit-transition: all .5s ease
+        -o-transition: all .5s ease
+        transition: all .5s ease
+
+// Estilos para el Slider
+/*  --------------- ---------------   */
+
+.reproductor input[type="range"]
+	background: transparent // Le ponemos un fondo transparente 
+	-webkit-appearance:none // Ocultamos el slider 
+
+
+.reproductor input[type=range]::-webkit-slider-thumb 
+	-webkit-appearance: none
+
+
+.reproductor input[type=range]:focus 
+	outline: none
+	// Ocultamos el borde azul que agregan algunos navegadores
+
+
+.reproductor input[type=range]::-ms-track 
+	width: 100%
+	cursor: pointer
+
+	/* Ocultamos todos los estilos para poder darle los nuestros */
+	background: transparent
+	border-color: transparent
+	color: transparent
+
+
+/* Dando estilos al Thumb*/
+.reproductor input[type=range]::-moz-range-thumb 
+	background: rgba(0,0,0,.5)
+	width: 8px
+	height: 8px
+	cursor: pointer
+	border: none
+	border: 2px solid #ccc
+	border-radius: 100%
+	&:hover
+        background: #ccc
+	&:active
+        background: #424242
+
+/* Dando estilos a Chrome*/
+.reproductor input[type=range]::-webkit-slider-thumb 
+	background: rgba(0,0,0,.5)
+	width: 8px
+	height: 8px
+	cursor: pointer
+	border: none
+	border: 2px solid #ccc
+	border-radius: 100%
+	&:hover
+        background: #ccc
+	&:active
+        background: #424242
+
+/* Dando estilos a Internet Explorer*/
+.reproductor input[type=range]::-ms-thumb 
+	background: rgba(0,0,0,.5)
+	width: 8px
+	height: 8px
+	cursor: pointer
+	border: none
+	border: 2px solid #ccc
+	border-radius: 100%
+	&:hover
+        background: #ccc
+	&:active
+        background: #424242
+
+/* Dando estilos al Track */
+/* Firefox*/
+.reproductor input[type=range]::-moz-range-track
+	width: 100%
+	background: rgba(0,0,0,.5)
+	height: 12px
+
+/* Chrome*/
+.reproductor input[type=range]::-webkit-slider-runnable-track
+	width: 100%
+	background: rgba(0,0,0,.5)
+	height: 12px
+
+/* Internet Explorer*/
+.reproductor input[type=range]::-ms-track
+	width: 100%
+	background: rgba(0,0,0,.5)
+	height: 12px
+
+/* --------- --------- --------- */
+
+.contenedor 
+	.tiempo
+		width: 100%
+		z-index: 100
+		position: absolute
+		bottom: -3px
+		background: #000
+	.btn
+		position: absolute
+		.fa
+			color: #fff
+			position: relative
+			left: 1px
+	.play
+		bottom: 25px
+		left: 20px
+		background: rgba(0,0,0,.5)
+		width: 50px
+		height: 50px
+		border: none
+		border-radius: 100%
+		&:hover
+			background: rgba(0,0,0,.8)
+
+	.volumen
+		position: absolute
+		width: 100px
+		bottom: 25px
+		right: 20px

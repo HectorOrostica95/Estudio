@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Controlando Audio y Video de HTML5 con Javascript</title>
+</head>
+<body>
+    <video id="video" src="Media/intro.mp4" width="500" controls>
+        <p>Tu navegador no soporta videos de HTML5, por favor actualizalo.</p>
+    </video> <br>
+
+    <audio id="audio" src="Media/hyperfun.mp3" controls>
+        <p>Tu navegador no soporta audios en HTML5,por favor actualizalo.</p>
+    </audio> <br>
+
+    <button id="play">Reproducir</button>
+    <button id="pause">Pausar</button>
+
+    <input id="volumen" type="range" value="1" min="0" max="1" step="0.1">
+    
+    <script>
+        var video = document.getElementById('audio'),
+            btnPlay = document.getElementById('play'),
+            btnPause = document.getElementById('pause'),
+            volumen = document.getElementById('volumen')
+
+        btnPlay.addEventListener('click', function(){
+            video.play();
+        });
+
+        btnPause.addEventListener('click', function(){
+            video.pause();
+        });
+
+        volumen.addEventListener('change', function(){
+            video.volume = volumen.value;
+        });
+
+        //  --  Propiedades 
+        //video.currentTime   - regresa el tiempo actual en el que va el video
+        //video.duration      - regresa la duracion del video
+        //video.ended         - regresa si el video ya termino
+
+        //  --  Eventos
+        //pause - pausa el video
+        //play  - inicia o continua con el video 
+        
+    </script>
+</body>
+</html>

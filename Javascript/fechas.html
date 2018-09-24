@@ -7,30 +7,33 @@
     <title>Fechas en Javascript</title>
 </head>
 <body>
-    <button id="btn-iniciar">Iniciar</button>
-    <button id="btn-detener">Detener</button>
-    <script>
-        var fecha = new Date();
-        document.write('<br><br><br>' + fecha);
-
-
-        function tiempo(){
-            document.write('<br>' + fecha);
-        }
-        
- 
-        var intervalo = setInterval(tiempo, 1000);
-        document.getElementById('btn-iniciar').addEventListener('click', function(){
-            intervalo = setInterval(tiempo, 1000);
-        })
-
-        document.getElementById('btn-detener').addEventListener('click', function(){
-            clearInterval(intervalo);
-        })
-
-
-
-    </script>
-    
+    <p id="fecha"></p>
 </body>
+<script>
+    var fecha = new Date();
+    document.write(fecha);
+
+    function mostrarTiempo(){
+        var fecha = new Date();
+        var parrafo = document.getElementById('fecha');
+        parrafo.innerHTML = fecha;
+    }
+
+    var intervalo = setInterval(mostrarTiempo, 1000);
+
+    //Como obtener tiempo
+    console.log(fecha.getHours() + ' Horas');
+    console.log(fecha.getMinutes() + ' Minutos');
+    console.log(fecha.getSeconds() + ' Segundos');
+
+    //Como obtener los dias de la semana
+    var semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+    console.log('Día: ' + semana[fecha.getDay()]);
+    
+    var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+    console.log('Mes: ' + meses[fecha.getMonth()]);
+    console.log('Año: ' + fecha.getFullYear());
+
+</script>
 </html>

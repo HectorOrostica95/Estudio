@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objetos en Javascript</title>
+</head>
+<body>
+    <script>
+        //var nombre = 'Hector';
+        //var edad = 27;
+        //var pais = 'Mexico';
+
+        //var nombreHermano = 'Francisco';
+        //var edadHermano = 23;
+        //var paisHermano = 'Chile';
+        
+        //document.write(nombre);
+
+        //var hector = {
+        //    nombre: 'Hector Orostica',
+        //    edad: 23,
+        //    pais: 'Chilensis',
+        //    bio: function(){
+        //        return this.nombre + ' tiene ' + this.edad + ' años, y vive en ' + this.pais;
+        //    }
+        //};
+
+        //var matias = {
+        //    nombre: ' Matias Mendoza',
+        //    edad: 22,
+        //    pais: 'Chilensis',
+        //    bio: function(){
+        //        return this.nombre + ' tiene ' + this.edad + ' años, y vive en ' + this.pais;
+        //    }
+        //};
+
+        //document.write(matias.bio());
+
+    // ------------------------------------------------------
+        function persona(nombre, edad, pais){
+            this.nombre = nombre;
+            this.edad = edad;
+            this.pais = pais;
+        }
+
+        var mama = new persona ('Marcia Orostica', 45, 'Chilensis');  
+        var felipe = new persona('Felipe Burgos', 27, 'Mexicano');
+        var hector = new persona('Hector Orostica', 23, 'Chilensis');
+        document.write(mama.nombre);
+        document.write('<br>');
+        document.write(felipe.edad);
+        document.write('<br>');
+        document.write(hector.pais);
+    </script>
+</body>
+</html>
