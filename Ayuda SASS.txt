@@ -10,6 +10,7 @@ en el caso de que se use node se debe realizar de la siguiente manera
 
 node-sass --version
 
+Ejemplo de uso de SASS
 node-sass estilos.sass estilos.css
 
 para que quede observando nuevos cambion 
