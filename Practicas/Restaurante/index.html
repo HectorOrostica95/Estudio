@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalablle=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet"> 
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="js/parallax.js"></script>
     <title>Cafe FalconMasters</title>
 </head>
 <body>
     <header>
         <div class="contenedor">
             <nav class="menu">
-                <a href="" id="btn-acerca-de">Acerca de</a>
-                <a href="" id="btn-menu">Menú</a>
-                <a href="" id="btn-galeria">Galería</a>
-                <a href="" id="btn-ubicacion">Ubicación</a>
+                <a href="#" id="btn-acerca-de">Acerca de</a>
+                <a href="#" id="btn-menu">Menú</a>
+                <a href="#" id="btn-galeria">Galería</a>
+                <a href="#" id="btn-ubicacion">Ubicación</a>
             </nav>
 
             <div class="textos">
@@ -28,19 +31,21 @@
     <section class="main">
         <!--    Corresponde a la seccion de acerca  -->
         <section class="acerca-de" id="acerca-de">
-            <div class="foto">
-                <img src="img/acerca-de.jpg" alt="">
+			<div class="contenedor">
+				<div class="foto">
+					<img src="img/acerca-de.jpg" alt="">
+				</div>
                 <article>
                     <h3>Acerca de</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa incidunt ipsam ea minus eos, aut provident est earum vero, placeat sequi laboriosam nemo possimus sunt odit neque et repellendus?</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste debitis quae in exercitationem sapiente nobis quo sequi, officiis eligendi autem iusto aliquid harum consequatur non maiores sit ab soluta.</p>
                 </article>
-            </div>
+			</div>
         </section>
         <!--    Corresponde a la seccion de menu  -->
         <section class="menu">
             <div class="contenedor">
-                <h3 class="titulo" id="platillos"></h3>
+                <h3 class="titulo" id="platillos">Menu</h3>
                 <div class="contenedor-menu">
                     <div class="contenedor-menu2">
                         <article>
@@ -66,6 +71,7 @@
                                 <p class="descripcion">Delicioso plato del norte de España, ideal para días fríos y lluviosos. Muy similar al cocido madrileño pero se hace con alubias rojas en vez de garbanzos.</p>
                             </div>
                         </article>
+						
                         <article>
                             <p class="categoria">De Tomar</p>
                             <div class="platillo">
@@ -90,7 +96,6 @@
                             </div>
                         </article>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -121,6 +126,7 @@
                 <img src="img/8.jpg" alt="">
             </div>
         </section>
+        <!--    Corresponde a la seccion de la ubicacion  -->
         <section class="ubicacion" id="ubicacion">
             <div class="contenedor">
                 <h3 class="titulo">Ubicación</h3>
@@ -130,14 +136,15 @@
                     <p class="correo">correo [arroba] tucorreo.com</p>
                 </div>
                 <div class="horarios">
-                    <h4>horarios</h4>
+                    <h4>Horarios</h4>
                     <p class="entre-semana">Lunes a Viernes <br> 8:00 AM - 9:00 PM</p>
                     <p class="fin-semana">Sabado y Domingo <br> 11:00 AM - 11:00 PM</p>
                 </div>
             </div>
         </section>
+        <!--    Corresponde a la seccion del mapa  -->
         <section class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53689.55282850369!2d-70.75462358863177!3d-32.74988878081046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968816835ff4b833%3A0xc26fa3627501a2a0!2sSan+Felipe%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1538437544082" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26844.775313686478!2d-70.73711377708918!3d-32.74989243271894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968816835ff4b833%3A0xc26fa3627501a2a0!2sSan+Felipe%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1538613423580" width="1600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
     </section>
 
@@ -148,5 +155,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

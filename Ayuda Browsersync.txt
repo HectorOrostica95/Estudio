@@ -1,5 +1,13 @@
+Ayuda para utilizar Browsersync
+
 Para instalar browsersync
 npm install -g browser-sync
 
+Para revisar la version instalada
+browser-sync --version
+
 Para ejecutar el archivo
 browser-sync start --server --files "index.html"
+
+Para ejecutar todos los archivos
+browser-sync start --server --files "*.html, css/*.css"
