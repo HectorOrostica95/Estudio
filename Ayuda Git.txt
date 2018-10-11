@@ -77,7 +77,12 @@ Comienzo de repositorio
 
     Para crear una nueva rama
     git checkout -b nombreDeLaRama
+
+    Para realizar el merge a la rama principal se debe posicionar primero en la principal y luego realizar el merge con la que se desea
+    git merge "Nombre de la rama que se desea unir a la principal"
     
+    Para eliminar una rama
+    git branch -d nombreDeLaRama
 
 
 
