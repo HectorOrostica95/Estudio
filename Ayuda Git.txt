@@ -84,23 +84,27 @@ Comienzo de repositorio
     Para eliminar una rama
     git branch -d nombreDeLaRama
 
+Generando una clave para github
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 
-Subir a git
-git push -u origin master
+Conectando el repositorio a github
 
-Otros
-…or create a new repository on the command line
+    Este comando se utiliza cuando no se a creado el repositorio todavia
+    Iniciar repositorio 
+    git init
 
-echo "# Estudio" >> README.md
-git init
-git commit -m "first commit"
-git remote add origin https://github.com/HectorOrostica95/Estudio.git
-git push -u origin master
+    Conectandose con el repositorio remoto
+    git remote add origin https://github.com/HectorOrostica95/Estudio.git
 
-…or push an existing repository from the command line
+    Para saber el repositorio al cual estoy conectado
+    git remote -v
 
-git remote add origin https://github.com/HectorOrostica95/Estudio.git
-git push -u origin master
+    Para subir los archivos a github
+    git push -u origin master
 
-Correo: hectororostica2.0@gmail.com
+    Para traer los archivos desde internet a la pc
+    git pull origin master
+
+    Para clonar un codigo de algun usuario de github
+    git clone "insertar direccion URL"
