@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AACI,SADK,CACL,OAAO,CAAC;EACJ,KAAK,EAHG,OAAO;CAGS;;AAFhC,AAGI,SAHK,CAGL,CAAC,CAAC;EACE,KAAK,EALG,OAAO;CAKS",
+    "sources": [
+        "variables.sass"
+    ],
+    "names": [],
+    "file": "variables.css"
+}

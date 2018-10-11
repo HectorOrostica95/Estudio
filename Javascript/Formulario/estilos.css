@@ -2,22 +2,25 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   background: #f2f2f2;
   font-family: 'Slabo 27px', sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 .contenedor {
   width: 400px;
-  margin: 40px; }
+  margin: 40px;
+}
 
 .formulario .contenedor-inputs {
   padding: 20px;
   background: #fff;
-  border-radius: 6px 6px 0 0; }
+  border-radius: 6px 6px 0 0;
+}
 
 .formulario input[type='text'],
 .formulario input[type='email'] {
@@ -28,39 +31,58 @@ body {
   border: none;
   border-bottom: 2px solid #ccc;
   font-family: 'Slabo 27px', sans-serif;
-  font-size: 18px; }
-  .formulario input[type='text']:focus,
-  .formulario input[type='email']:focus {
-    border-bottom: 2px solid #246eb9; }
+  font-size: 18px;
+}
+
+.formulario input[type='text']:focus,
+.formulario input[type='email']:focus {
+  border-bottom: 2px solid #246eb9;
+}
 
 .formulario input[type='radio'] {
-  display: none; }
+  display: none;
+}
 
 .formulario .sexo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin-bottom: 20px; }
-  .formulario .sexo .hombre {
-    border-radius: 3px 0 0 3px; }
-  .formulario .sexo .mujer {
-    border-radius: 0 3px 3px 0; }
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.formulario .sexo .hombre {
+  border-radius: 3px 0 0 3px;
+}
+
+.formulario .sexo .mujer {
+  border-radius: 0 3px 3px 0;
+}
 
 .formulario .label-radio {
   background: rgba(249, 160, 63, 0.4);
   color: #fff;
   padding: 10px;
   text-align: center;
-  width: 49.5%; }
+  width: 49.5%;
+}
 
 .formulario input[type='radio']:checked + .label-radio {
-  background: #f9a03d; }
+  background: #f9a03d;
+}
 
 .formulario .terminos {
   text-align: center;
-  color: #424242; }
-  .formulario .terminos label {
-    margin-left: 10px; }
+  color: #424242;
+}
+
+.formulario .terminos label {
+  margin-left: 10px;
+}
 
 .formulario .error {
   display: none;
@@ -69,7 +91,8 @@ body {
   background: #ce1818;
   color: #fff;
   padding: 15px 10px;
-  padding-left: 40px; }
+  padding-left: 40px;
+}
 
 .formulario .btn {
   width: 100%;
@@ -82,6 +105,10 @@ body {
   cursor: pointer;
   border-radius: 0 0 6px 6px;
   font-family: 'Slabo 27px', sans-serif;
-  font-size: 18px; }
-  .formulario .btn:hover {
-    background: #4357ad; }
+  font-size: 18px;
+}
+
+.formulario .btn:hover {
+  background: #4357ad;
+}
+/*# sourceMappingURL=estilos.css.map */

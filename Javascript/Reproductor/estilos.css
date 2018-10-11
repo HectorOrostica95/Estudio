@@ -2,40 +2,52 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  background: #e9f1f7; }
+  background: #e9f1f7;
+}
 
 .contenedor {
   background: #000;
   width: 80%;
   margin: 40px;
-  max-width: 800px; }
-  .contenedor .reproductor {
-    position: relative; }
-    .contenedor .reproductor:hover .controles {
-      opacity: 1; }
-  .contenedor .video {
-    width: 100%;
-    vertical-align: top;
-    z-index: 90; }
-  .contenedor .controles {
-    opacity: 0;
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease; }
+  max-width: 800px;
+}
+
+.contenedor .reproductor {
+  position: relative;
+}
+
+.contenedor .reproductor:hover .controles {
+  opacity: 1;
+}
+
+.contenedor .video {
+  width: 100%;
+  vertical-align: top;
+  z-index: 90;
+}
+
+.contenedor .controles {
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
 
 /*  --------------- ---------------   */
 .reproductor input[type="range"] {
-  background: transparent; }
+  background: transparent;
+}
 
 .reproductor input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 .reproductor input[type=range]:focus {
-  outline: none; }
+  outline: none;
+}
 
 .reproductor input[type=range]::-ms-track {
   width: 100%;
@@ -43,7 +55,8 @@ body {
   /* Ocultamos todos los estilos para poder darle los nuestros */
   background: transparent;
   border-color: transparent;
-  color: transparent; }
+  color: transparent;
+}
 
 /* Dando estilos al Thumb*/
 .reproductor input[type=range]::-moz-range-thumb {
@@ -53,11 +66,16 @@ body {
   cursor: pointer;
   border: none;
   border: 2px solid #ccc;
-  border-radius: 100%; }
-  .reproductor input[type=range]::-moz-range-thumb:hover {
-    background: #ccc; }
-  .reproductor input[type=range]::-moz-range-thumb:active {
-    background: #424242; }
+  border-radius: 100%;
+}
+
+.reproductor input[type=range]::-moz-range-thumb:hover {
+  background: #ccc;
+}
+
+.reproductor input[type=range]::-moz-range-thumb:active {
+  background: #424242;
+}
 
 /* Dando estilos a Chrome*/
 .reproductor input[type=range]::-webkit-slider-thumb {
@@ -67,11 +85,16 @@ body {
   cursor: pointer;
   border: none;
   border: 2px solid #ccc;
-  border-radius: 100%; }
-  .reproductor input[type=range]::-webkit-slider-thumb:hover {
-    background: #ccc; }
-  .reproductor input[type=range]::-webkit-slider-thumb:active {
-    background: #424242; }
+  border-radius: 100%;
+}
+
+.reproductor input[type=range]::-webkit-slider-thumb:hover {
+  background: #ccc;
+}
+
+.reproductor input[type=range]::-webkit-slider-thumb:active {
+  background: #424242;
+}
 
 /* Dando estilos a Internet Explorer*/
 .reproductor input[type=range]::-ms-thumb {
@@ -81,30 +104,38 @@ body {
   cursor: pointer;
   border: none;
   border: 2px solid #ccc;
-  border-radius: 100%; }
-  .reproductor input[type=range]::-ms-thumb:hover {
-    background: #ccc; }
-  .reproductor input[type=range]::-ms-thumb:active {
-    background: #424242; }
+  border-radius: 100%;
+}
+
+.reproductor input[type=range]::-ms-thumb:hover {
+  background: #ccc;
+}
+
+.reproductor input[type=range]::-ms-thumb:active {
+  background: #424242;
+}
 
 /* Dando estilos al Track */
 /* Firefox*/
 .reproductor input[type=range]::-moz-range-track {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  height: 12px; }
+  height: 12px;
+}
 
 /* Chrome*/
 .reproductor input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  height: 12px; }
+  height: 12px;
+}
 
 /* Internet Explorer*/
 .reproductor input[type=range]::-ms-track {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  height: 12px; }
+  height: 12px;
+}
 
 /* --------- --------- --------- */
 .contenedor .tiempo {
@@ -112,14 +143,18 @@ body {
   z-index: 100;
   position: absolute;
   bottom: -3px;
-  background: #000; }
+  background: #000;
+}
 
 .contenedor .btn {
-  position: absolute; }
-  .contenedor .btn .fa {
-    color: #fff;
-    position: relative;
-    left: 1px; }
+  position: absolute;
+}
+
+.contenedor .btn .fa {
+  color: #fff;
+  position: relative;
+  left: 1px;
+}
 
 .contenedor .play {
   bottom: 25px;
@@ -128,12 +163,17 @@ body {
   width: 50px;
   height: 50px;
   border: none;
-  border-radius: 100%; }
-  .contenedor .play:hover {
-    background: rgba(0, 0, 0, 0.8); }
+  border-radius: 100%;
+}
+
+.contenedor .play:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
 
 .contenedor .volumen {
   position: absolute;
   width: 100px;
   bottom: 25px;
-  right: 20px; }
+  right: 20px;
+}
+/*# sourceMappingURL=estilos.css.map */
