@@ -26,14 +26,60 @@ Comienzo de repositorio
     Iniciar repositorio 
     git init
 
-    cuando se habla del stage in
+//  cuando se habla del stage (index) se refiere a que pasa al area de los archivos donde seran comiteados
+
     Para saber donde estoy ubicado y el estado de mi repositorio
     git status
 
+    Se agregan datos al Stage Index 
+    git add "nombre del archivo"
+
+    Ingresando un commit (El commit puede abarcar un total de 50 caracteres)
+    git commit -m "Ingresar comentario"
+
+    Para remover un archivo del Stage Index
+    git rm --cached nombreArchivo
+
+    se debe agregar el archivo .gitignore
+        este archivo se crea para decirle a git que debe ignorar los archivos nombrados en el.
+
+    Para ver el historia de commit
+    git log
+
+    Para ver todos los archivos agregados en el commit 
+    git log --stat
+
+    Muestra el historial de los commit de manera resumida (una sola linea)
+    git log --oneline
+
+    Permite ver de manera grafica las ramas
+    git log --graph
+
+    Permite ver todo
+    git log --oneline --graph --all
+
+    Para ver la diferencia entre el commit pasado y el contenido actual
+    git diff
+
+    Para ver la diferencia entre un commit en especifico y el contenido actual
+    git diff "codigo del commit" nombreArchivo
+
+    Para regresar a una version pasada
+    git checkout "Codigo o identificador del commit"
+
+    una rama o branches corresponde a una copia del repositorio original donde el usuario la ocupa para no dañar la rama principal
+
+    Permite visualizar cuantas ramas existen
+    git branch
+
+    Para cambiar de rama
+    git checkout nombreDeLaRama
+
+    Para crear una nueva rama
+    git checkout -b nombreDeLaRama
+    
 
 
-Realizar Commit
-git commit -m "Ingresar comentario"
 
 Subir a git
 git push -u origin master
@@ -43,7 +89,6 @@ Otros
 
 echo "# Estudio" >> README.md
 git init
-git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/HectorOrostica95/Estudio.git
 git push -u origin master
