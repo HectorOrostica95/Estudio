@@ -1,7 +1,36 @@
 Comandos de git
 
-Iniciar repositorio 
-git init
+Configuracion basica
+
+    Para ver la version con la cual se cuenta
+    git --version 
+
+    Para configurar el usuario
+    git config --global user.name "Hector Oróstica"
+
+    Para ver el usuario 
+    git config user.name
+
+    Para configurar el correo 
+    git config --global user.email "h.orostica.95@gmail.com"
+
+    Para ver el correo 
+    git config user.email
+
+    Configuracion para tener colores
+    git config color.ui true
+
+
+Comienzo de repositorio
+
+    Iniciar repositorio 
+    git init
+
+    cuando se habla del stage in
+    Para saber donde estoy ubicado y el estado de mi repositorio
+    git status
+
+
 
 Realizar Commit
 git commit -m "Ingresar comentario"
